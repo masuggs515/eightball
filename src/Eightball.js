@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import reactDom from 'react-dom';
 import './Eightball.css';
 
 const phraseList = [
@@ -44,9 +43,9 @@ const Eightball = (props) => {
     return (
         <>
         <div className='Eightball'>
-            <button className='Eightball-button' style={{ backgroundColor: backgroundColor }} onClick={handleClick}>
+            <div className='Eightball-button' style={{ backgroundColor: backgroundColor }} onClick={handleClick}>
                 {words}
-                </button>
+                </div>
         </div>
         <button className='Eightball-reset-button' onClick={restart}>Reset Ball</button>
         </>
